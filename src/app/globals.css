@@ -98,7 +98,8 @@ svg { width: 22px; fill: none; stroke: currentColor; stroke-width: 1.5; }
 
 .delivery { background: #ece6da; }
 .delivery-heading { align-items: center; }.artifact-shell { margin-top: 64px; display: grid; grid-template-columns: 265px minmax(0,1fr); min-height: 635px; background: #181714; box-shadow: 0 32px 90px rgba(45,36,23,.17); }
-.artifact-tabs { background: #24211d; display: flex; flex-direction: column; padding: 18px 0; border-right: 1px solid rgba(255,255,255,.07); }
+.artifact-tabs { background: #24211d; display: flex; flex-direction: column; padding: 18px 0; border-right: 1px solid rgba(255,255,255,.07); max-height: 635px; overflow-y: auto; scrollbar-color: #5d5549 transparent; }
+.artifact-tabs button { flex: none; }
 .artifact-tabs button { color: #a19a8f; cursor: pointer; border: 0; background: none; min-height: 82px; padding: 15px 21px; display: grid; grid-template-columns: 35px 1fr 15px; gap: 10px; align-items: center; text-align: left; border-left: 2px solid transparent; transition: .2s; }
 .artifact-tabs button:hover { background: rgba(255,255,255,.03); color: #eee7da; }.artifact-tabs button.active { color: #fff; background: rgba(184,138,59,.09); border-left-color: var(--gold-light); }
 .tab-icon { color: var(--gold-light); }.tab-icon svg { width: 20px; }.artifact-tabs button > span:nth-child(2) { display: flex; flex-direction: column; gap: 7px; }.artifact-tabs small { font-size: 7px; letter-spacing: .16em; color: #777067; }.artifact-tabs b { font: 400 14px var(--serif); }.artifact-tabs button > i { font-size: 12px; color: #6f685e; }

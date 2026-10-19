@@ -7,7 +7,11 @@ undigital/
 ├── .htaccess                            # Security headers, SPA fallback, proteksi berkas
 ├── README.md                            # Instalasi, permission, deployment, dan operasi
 ├── index.html                           # HTML shell tunggal untuk Client-First SPA
+├── style.css                            # Bundel desain fase awal (Luxury Gold & Dark/Cream)
+├── app.js                               # Bundel SPA fase awal (security, router, Modul 0-2)
 ├── api.php                              # REST JSON front controller (PHP Native)
+├── config.php                           # Koneksi PDO MySQL, env, dan helper inti
+
 ├── database/
 │   ├── schema.sql                       # Skema MySQL 8 dan indeks
 │   └── seeds/

@@ -18,6 +18,21 @@ const icons: Record<string, React.ReactNode> = {
   database: (
     <svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3" /><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" /></svg>
   ),
+  html: (
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h16l-1.5 17L12 22l-6.5-2L4 3Z" /><path d="M8 7h8l-.5 5h-7l.3 4 3.2 1 3.2-1 .2-2" /></svg>
+  ),
+  css: (
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c-1 4-6 6-6 11a6 6 0 0 0 12 0c0-5-5-7-6-11Z" /><path d="M9 15a3 3 0 0 0 3 3" /></svg>
+  ),
+  js: (
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3 5 14h5l-1 7 8-11h-5l1-7Z" /></svg>
+  ),
+  config: (
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3" /><path d="M19 12c0-.6-.1-1.2-.2-1.7l2-1.6-2-3.4-2.4 1a7 7 0 0 0-2.9-1.7L13 2h-2l-.5 2.6a7 7 0 0 0-2.9 1.7l-2.4-1-2 3.4 2 1.6a7 7 0 0 0 0 3.4l-2 1.6 2 3.4 2.4-1a7 7 0 0 0 2.9 1.7L11 22h2l.5-2.6a7 7 0 0 0 2.9-1.7l2.4 1 2-3.4-2-1.6c.1-.5.2-1.1.2-1.7Z" /></svg>
+  ),
+  api: (
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M13.5 4l-3 16" /></svg>
+  ),
   shield: (
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 8 7.5 9.5 4.4-1.5 7.5-4.9 7.5-9.5V6z" /><path d="m9 12 2 2 4-4" /></svg>
   ),
@@ -172,7 +187,7 @@ export default function ArchitectureConsole({ artifacts }: { artifacts: Artifact
             <div className="code-window">
               <div className="code-toolbar">
                 <div className="window-dots"><i /><i /><i /></div>
-                <div className="filename"><span>{artifact.language === "sql" ? "DB" : artifact.id === "tree" ? "DIR" : "AP"}</span>{artifact.filename}</div>
+                <div className="filename"><span>{{ sql: "DB", php: "PHP", html: "HTML", css: "CSS", js: "JS", text: "DIR" }[artifact.language] ?? "AP"}</span>{artifact.filename}</div>
                 <button onClick={copyArtifact} type="button" className={copied ? "copied" : ""}>
                   {copied ? "Tersalin ✓" : "Salin"}
                 </button>

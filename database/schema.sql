@@ -125,7 +125,7 @@ CREATE TABLE media_files (
   media_kind ENUM('cover', 'groom', 'bride', 'gallery', 'music') NOT NULL,
   relative_path VARCHAR(500) NOT NULL,
   original_name VARCHAR(255) NULL,
-  mime_type ENUM('image/jpeg', 'audio/mpeg') NOT NULL,
+  mime_type ENUM('image/jpeg', 'image/png', 'image/webp', 'audio/mpeg') NOT NULL,
   byte_size INT UNSIGNED NOT NULL,
   width SMALLINT UNSIGNED NULL,
   height SMALLINT UNSIGNED NULL,
