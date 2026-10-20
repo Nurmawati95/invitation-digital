@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="48" viewBox="0 0 120 48">
+  <rect width="120" height="48" rx="8" fill="#0B3C71"/>
+  <path d="M22 34 L28 14 L34 34" stroke="#F5B335" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="76" y="32" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">MANDIRI</text>
+</svg>

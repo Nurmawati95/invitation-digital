@@ -1,0 +1,32 @@
+{
+  "name": "UNDIGITAL — The Wedding of Aditya & Anindya",
+  "short_name": "UNDIGITAL",
+  "description": "Undangan Pernikahan Digital oleh UNDIGITAL — The Wedding of Aditya & Anindya, 11 April 2027.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#143B27",
+  "theme_color": "#143B27",
+  "lang": "id",
+  "categories": ["lifestyle", "events"],
+  "icons": [
+    {
+      "src": "/ico_undigital.jpg",
+      "sizes": "1024x1024",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/ico_undigital.jpg",
+      "sizes": "1024x1024",
+      "type": "image/jpeg",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    { "name": "Konfirmasi Kehadiran", "url": "/#rsvp" },
+    { "name": "Amplop Digital", "url": "/#gift" },
+    { "name": "Galeri Foto", "url": "/#gallery" }
+  ]
+}
